@@ -19,10 +19,10 @@ const connectDB = async () => {
       console.log(`[MongoDB] Migrated ${migratedUsers.modifiedCount} technician account(s) to Support Team`);
     }
 
-    // Auto-seed initial demo accounts if database is fresh/empty
+    // Create a bootstrap administrator if the database is fresh and empty.
     const userCount = await User.countDocuments();
     if (userCount === 0) {
-      console.log('[MongoDB] Empty database detected. Auto-seeding initial users and assets...');
+      console.log('[MongoDB] Empty database detected. Creating the initial administrator account...');
       const { seedData } = require('../utils/seeder');
       await seedData();
     }
