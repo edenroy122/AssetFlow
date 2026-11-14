@@ -1,0 +1,26 @@
+{
+  "name": "ams-backend",
+  "version": "1.0.0",
+  "description": "Asset Management System Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch-path=./controllers --watch-path=./config --watch-path=./middleware --watch-path=./models --watch-path=./routes --watch-path=./utils --watch-path=server.js server.js"
+  },
+  "keywords": [
+    "asset-management",
+    "ams",
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "nodemailer": "^10.5.0"
+  }
+}

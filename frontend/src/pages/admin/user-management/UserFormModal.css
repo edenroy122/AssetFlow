@@ -1,0 +1,197 @@
+/* ==============================================================
+   UserFormModal — Professional registration / edit form
+   ============================================================== */
+
+/* ── Form container ── */
+.ufm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* ── Section fieldset ── */
+.ufm-section {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.15rem 1.25rem 1.25rem;
+  margin: 0;
+  background-color: #fafbfc;
+}
+
+.ufm-section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0 0.45rem;
+  margin-bottom: 0.25rem;
+}
+
+/* ── Two-column row ── */
+.ufm-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.85rem;
+}
+
+.ufm-row:first-of-type {
+  margin-top: 0.5rem;
+}
+
+/* ── Field wrapper ── */
+.ufm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.ufm-field-full {
+  grid-column: span 2;
+}
+
+/* ── Label ── */
+.ufm-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+}
+
+.ufm-label-green {
+  color: #166534;
+}
+
+.ufm-req {
+  color: #ef4444;
+  margin-left: 0.2rem;
+}
+
+/* ── Input wrapper with icon ── */
+.ufm-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ufm-input-icon {
+  position: absolute;
+  left: 0.75rem;
+  color: #94a3b8;
+  pointer-events: none;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+/* ── Input & select ── */
+.ufm-input,
+.ufm-select {
+  width: 100%;
+  padding: 0.6rem 0.85rem 0.6rem 2.35rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-size: 0.875rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ufm-input:focus,
+.ufm-select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.ufm-input::placeholder {
+  color: #9ca3af;
+}
+
+.ufm-input:disabled {
+  background-color: #f1f5f9;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Error ring on input */
+.ufm-input-error .ufm-input,
+.ufm-input-error .ufm-select {
+  border-color: #f87171;
+}
+.ufm-input-error .ufm-input:focus,
+.ufm-input-error .ufm-select:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+.ufm-input-error .ufm-input-icon {
+  color: #f87171;
+}
+
+/* ── Hints ── */
+.ufm-hint {
+  font-size: 0.72rem;
+  color: #6b7280;
+  margin-top: 0.1rem;
+  line-height: 1.3;
+}
+
+.ufm-hint-error {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+.ufm-hint-green {
+  color: #15803d;
+}
+
+/* ── Designation highlight box ── */
+.ufm-designation-box {
+  margin-top: 0.85rem;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  animation: ufmSlideIn 0.2s ease;
+}
+
+/* ── Error banner ── */
+.ufm-error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Animation ── */
+@keyframes ufmSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .ufm-row {
+    grid-template-columns: 1fr;
+  }
+  .ufm-field-full {
+    grid-column: span 1;
+  }
+}

@@ -1,0 +1,104 @@
+.ams-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.ams-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Primary */
+.ams-btn-primary {
+  background: var(--primary-gradient, linear-gradient(135deg, #4f46e5 0%, #6366f1 100%));
+  color: #ffffff;
+  border-color: #4f46e5;
+  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.25);
+}
+
+.ams-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #4338ca 0%, #4f46e5 100%);
+  border-color: #4338ca;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.35);
+}
+
+/* Secondary */
+.ams-btn-secondary {
+  background-color: #ffffff;
+  color: #334155;
+  border-color: #cbd5e1;
+}
+
+.ams-btn-secondary:hover:not(:disabled) {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.ams-btn-light-grey {
+  background-color: #f1f5f9;
+  color: #334155;
+  border-color: #e2e8f0;
+  box-shadow: none;
+}
+
+.ams-btn-light-grey:hover:not(:disabled) {
+  background-color: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+/* Danger */
+.ams-btn-danger {
+  background-color: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+}
+
+.ams-btn-danger:hover:not(:disabled) {
+  background-color: #dc2626;
+  border-color: #dc2626;
+}
+
+/* Success */
+.ams-btn-success {
+  background-color: #10b981;
+  color: #ffffff;
+  border-color: #10b981;
+}
+
+.ams-btn-success:hover:not(:disabled) {
+  background-color: #059669;
+  border-color: #059669;
+}
+
+/* Outline */
+.ams-btn-outline {
+  background-color: transparent;
+  color: var(--primary-color, #4f46e5);
+  border-color: var(--primary-border, #c7d2fe);
+}
+
+.ams-btn-outline:hover:not(:disabled) {
+  background-color: var(--primary-light, #eef2ff);
+  border-color: var(--primary-color, #4f46e5);
+}
+
+/* Sizes */
+.ams-btn-sm {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.8rem;
+}
+
+.ams-btn-lg {
+  padding: 0.75rem 1.4rem;
+  font-size: 1rem;
+}

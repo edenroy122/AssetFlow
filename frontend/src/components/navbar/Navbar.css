@@ -1,0 +1,114 @@
+.ams-navbar {
+  height: 64px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* User profile button */
+.user-badge-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.15s ease;
+  font-family: inherit;
+}
+
+.user-badge-container:hover {
+  background-color: #f8fafc;
+}
+
+.user-avatar-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+  color: #4f46e5;
+  border: 1px solid #c7d2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.user-meta-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.user-meta-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* User role below name - no background color for all user roles */
+.role-pill {
+  display: inline-block;
+  padding: 0;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #64748b;
+  letter-spacing: 0.01em;
+}
+
+.role-pill.admin {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #dc2626;
+}
+
+.role-pill.asset-manager {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #0284c7;
+}
+
+.role-pill.technician {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #d97706;
+}
+
+.role-pill.support {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #0d9488;
+}
+
+.role-pill.employee {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #059669;
+}

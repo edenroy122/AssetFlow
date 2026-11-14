@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="af-bg-gradient" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="55%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+    <linearGradient id="af-cube-top" x1="14" y1="12" x2="34" y2="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#e0e7ff" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="af-cube-left" x1="14" y1="20" x2="24" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c7d2fe" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="af-cube-right" x1="24" y1="20" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#a5b4fc" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="af-flow-gradient" x1="8" y1="18" x2="40" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#67e8f9" />
+    </linearGradient>
+    <filter id="af-shadow" x="0" y="2" width="48" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#312e81" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <rect x="3" y="3" width="42" height="42" rx="11" fill="url(#af-bg-gradient)" filter="url(#af-shadow)" />
+  <rect x="4" y="4" width="40" height="18" rx="10" fill="white" fill-opacity="0.12" />
+
+  <path d="M24 12L34 17.5L24 23L14 17.5L24 12Z" fill="url(#af-cube-top)" />
+  <path d="M14 18.8L23 23.8V33.8L14 28.8V18.8Z" fill="url(#af-cube-left)" />
+  <path d="M25 23.8L34 18.8V28.8L25 33.8V23.8Z" fill="url(#af-cube-right)" />
+
+  <path d="M24 23V33.5" stroke="#4338ca" stroke-width="1.2" stroke-opacity="0.5" stroke-linecap="round" />
+
+  <path
+    d="M9 25.5C9 18.5 15.5 14 23.5 14C30 14 36.5 17.5 38 23C39.5 28.5 34.5 34 26 34C19 34 13.5 30.5 12 27"
+    stroke="url(#af-flow-gradient)"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    opacity="0.92"
+  />
+
+  <circle cx="38" cy="23" r="2.2" fill="#ffffff" />
+  <circle cx="9" cy="25.5" r="1.8" fill="#38bdf8" />
+  <circle cx="26" cy="34" r="1.5" fill="#a5f3fc" />
+</svg>

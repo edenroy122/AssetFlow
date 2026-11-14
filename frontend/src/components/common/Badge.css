@@ -1,0 +1,78 @@
+.ams-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.ams-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+/* Success / Active */
+.ams-badge-success {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+.ams-badge-success .ams-badge-dot {
+  background-color: #10b981;
+}
+
+/* Danger / Suspended / Rejected */
+.ams-badge-danger {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+.ams-badge-danger .ams-badge-dot {
+  background-color: #ef4444;
+}
+
+/* Warning / Inactive / Under Repair */
+.ams-badge-warning {
+  background-color: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+.ams-badge-warning .ams-badge-dot {
+  background-color: #f59e0b;
+}
+
+/* Info / Blue */
+.ams-badge-info {
+  background-color: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+.ams-badge-info .ams-badge-dot {
+  background-color: #3b82f6;
+}
+
+/* Secondary / Slate */
+.ams-badge-secondary {
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+.ams-badge-secondary .ams-badge-dot {
+  background-color: #94a3b8;
+}
+
+/* ── Role-only variant: no background, no border, just coloured text ── */
+.ams-badge-role {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  font-weight: 600;
+}
+.ams-badge-role .ams-badge-dot {
+  display: none;
+}

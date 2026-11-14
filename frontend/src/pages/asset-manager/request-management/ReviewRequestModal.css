@@ -1,0 +1,29 @@
+.review-form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.review-info-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.review-info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.review-info-label {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.review-info-val {
+  color: #0f172a;
+  font-weight: 600;
+}

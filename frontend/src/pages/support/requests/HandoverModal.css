@@ -1,0 +1,227 @@
+.handover-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  max-height: 75vh;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.handover-summary-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.handover-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.825rem;
+}
+
+.handover-label {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.handover-val {
+  color: #0f172a;
+  font-weight: 600;
+  text-align: right;
+}
+
+.inventory-selector-box {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.85rem;
+  background: #ffffff;
+}
+
+.inventory-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  background: #f1f5f9;
+  border-radius: 6px;
+  margin-bottom: 0.65rem;
+}
+
+.inventory-search-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 0.825rem;
+  outline: none;
+}
+
+/* Compact Small List View for All Assets */
+.compact-asset-table-wrap {
+  max-height: 260px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.compact-asset-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.775rem;
+  text-align: left;
+}
+
+.compact-asset-table th {
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+  font-size: 0.725rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.compact-asset-table td {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+  vertical-align: middle;
+}
+
+.compact-asset-row {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.compact-asset-row:hover {
+  background-color: #f0fdfa;
+}
+
+.compact-asset-row.selected {
+  background-color: #ccfbf1 !important;
+  font-weight: 500;
+}
+
+.compact-asset-tag {
+  font-family: monospace;
+  font-weight: 700;
+  color: #0f766e;
+  background: #f0fdfa;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #99f6e4;
+  white-space: nowrap;
+  font-size: 0.75rem;
+}
+
+.compact-asset-title {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.compact-asset-meta {
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+.compact-asset-cat {
+  font-size: 0.75rem;
+  color: #334155;
+  white-space: nowrap;
+}
+
+.compact-asset-specs {
+  max-width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.725rem;
+  color: #475569;
+}
+
+.compact-asset-serial {
+  font-family: monospace;
+  font-size: 0.725rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.compact-badge {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.compact-badge.new,
+.compact-badge.good {
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.compact-badge.fair {
+  background-color: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.compact-badge.damaged {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.selected-asset-banner {
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #0f766e;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.handover-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.handover-form-label {
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.handover-form-input,
+.handover-form-select,
+.handover-form-textarea {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.825rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.handover-form-input:focus,
+.handover-form-select:focus,
+.handover-form-textarea:focus {
+  border-color: #0d9488;
+}

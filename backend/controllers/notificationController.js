@@ -1,0 +1,70 @@
+const Notification = require('../models/Notification');
+
+// @desc    Get notifications for logged in user
+// @route   GET /api/notifications
+// @access  Private
+const getMyNotifications = async (req, res, next) => {
+  try {
+    const notifications = await Notification.find({ recipient: req.user._id })
+      .sort({ createdAt: -1 })
+      .limit(30);
+
+    const unreadCount = await Notification.countDocuments({
+      recipient: req.user._id,
+      isRead: false
+    });
+
+    res.status(200).json({
+      success: true,
+      unreadCount,
+      notifications
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Mark notification as read
+// @route   PATCH /api/notifications/:id/read
+// @access  Private
+const markNotificationRead = async (req, res, next) => {
+  try {
+    const notification = await Notification.findOneAndUpdate(
+      { _id: req.params.id, recipient: req.user._id },
+      { isRead: true },
+      { new: true }
+    );
+
+    res.status(200).json({
+      success: true,
+      notification
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Mark all notifications as read
+// @route   PATCH /api/notifications/mark-all-read
+// @access  Private
+const markAllNotificationsRead = async (req, res, next) => {
+  try {
+    await Notification.updateMany(
+      { recipient: req.user._id, isRead: false },
+      { isRead: true }
+    );
+
+    res.status(200).json({
+      success: true,
+      message: 'All notifications marked as read'
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+module.exports = {
+  getMyNotifications,
+  markNotificationRead,
+  markAllNotificationsRead
+};

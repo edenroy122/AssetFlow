@@ -1,0 +1,214 @@
+.udm-action-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  padding: 1rem 1.15rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.udm-action-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.udm-action-caption strong {
+  color: #0f172a;
+  font-size: 0.9rem;
+}
+
+.udm-action-caption span {
+  color: #64748b;
+  font-size: 0.76rem;
+}
+
+.udm-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.udm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 38px;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.udm-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.udm-btn-edit {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  color: #4338ca;
+}
+
+.udm-btn-edit:hover:not(:disabled) {
+  background: #e0e7ff;
+}
+
+.udm-btn-password {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+  color: #0369a1;
+}
+
+.udm-btn-password:hover:not(:disabled) {
+  background: #e0f2fe;
+}
+
+.udm-btn-delete {
+  background: #fff1f2;
+  border-color: #fecdd3;
+  color: #be123c;
+}
+
+.udm-btn-delete:hover:not(:disabled) {
+  background: #ffe4e6;
+}
+
+.udm-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.udm-section-heading {
+  margin: 0 0 0.85rem;
+}
+
+.udm-section-heading h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.udm-section-heading p {
+  margin: 0.25rem 0 0;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.udm-info-list {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.udm-info-row {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.35fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  min-height: 58px;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.udm-info-row:last-child {
+  border-bottom: 0;
+}
+
+.udm-label {
+  color: #64748b;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.udm-value {
+  overflow-wrap: anywhere;
+  color: #0f172a;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.udm-value.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.udm-password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.udm-password-form p {
+  margin: 0 0 0.35rem;
+  color: #475569;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.udm-password-form label {
+  color: #334155;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.udm-password-form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #0f172a;
+  font: inherit;
+}
+
+.udm-password-form input:focus {
+  outline: 3px solid rgba(79, 70, 229, 0.14);
+  border-color: #6366f1;
+}
+
+.udm-password-message {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.udm-password-message.error {
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.udm-password-message.success {
+  background: #f0fdf4;
+  color: #166534;
+}
+
+@media (max-width: 640px) {
+  .udm-action-box {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+  }
+
+  .udm-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .udm-info-row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+}

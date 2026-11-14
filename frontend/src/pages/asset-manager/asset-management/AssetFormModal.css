@@ -1,0 +1,179 @@
+/* ==============================================================
+   AssetFormModal — Professional sectioned form
+   ============================================================== */
+
+.afm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Section fieldset */
+.afm-section {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.15rem 1.25rem 1.25rem;
+  margin: 0;
+  background-color: #fafbfc;
+}
+
+.afm-section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0 0.45rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Two-column row */
+.afm-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.85rem;
+}
+
+.afm-row:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.afm-row-full {
+  grid-template-columns: 1fr;
+}
+
+/* Field wrapper */
+.afm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.afm-field-full {
+  grid-column: span 2;
+}
+
+/* Label */
+.afm-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+}
+
+.afm-req {
+  color: #ef4444;
+  margin-left: 0.2rem;
+}
+
+/* Input wrapper with icon */
+.afm-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.afm-input-icon {
+  position: absolute;
+  left: 0.75rem;
+  color: #94a3b8;
+  pointer-events: none;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+/* Input & select */
+.afm-input,
+.afm-select {
+  width: 100%;
+  padding: 0.6rem 0.85rem 0.6rem 2.35rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-size: 0.875rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.afm-input:focus,
+.afm-select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.afm-input::placeholder {
+  color: #9ca3af;
+}
+
+/* Textarea */
+.afm-textarea-wrap {
+  align-items: flex-start;
+}
+
+.afm-textarea-icon {
+  top: 0.7rem;
+  position: absolute;
+}
+
+.afm-textarea {
+  width: 100%;
+  padding: 0.6rem 0.85rem 0.6rem 2.35rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-size: 0.875rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 75px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.afm-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.afm-textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Hints */
+.afm-hint {
+  font-size: 0.72rem;
+  color: #6b7280;
+  margin-top: 0.1rem;
+  line-height: 1.3;
+}
+
+/* Error banner */
+.afm-error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .afm-row {
+    grid-template-columns: 1fr;
+  }
+  .afm-field-full {
+    grid-column: span 1;
+  }
+}

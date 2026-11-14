@@ -1,0 +1,37 @@
+.request-management-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.request-management-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.request-management-header-left h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.request-management-header-left p {
+  color: #64748b;
+  font-size: 0.925rem;
+  margin-top: 0.2rem;
+}
+
+.request-filter-bar {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
